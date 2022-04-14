@@ -1,6 +1,4 @@
-""" Parts of the U-Net model """
 import ctypes
-#ctypes.cdll.LoadLibrary('caffe2_nvrtc.dll')
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -24,7 +22,6 @@ def init_weights(m):
         m.bias.data.zero_()
         """
 class DoubleConv(nn.Module):
-    """(convolution => [BN] => ReLU) * 2"""
 
     def __init__(self, in_channels, out_channels, mid_channels=None):
         super().__init__()
@@ -45,7 +42,6 @@ class DoubleConv(nn.Module):
 
 
 class Down(nn.Module):
-    """Downscaling with maxpool then double conv"""
 
     def __init__(self, in_channels, out_channels):
         super().__init__()
@@ -58,7 +54,6 @@ class Down(nn.Module):
 
 
 class Up(nn.Module):
-    """Upscaling then double conv"""
 
     def __init__(self, in_channels, out_channels, bilinear=True):
         super().__init__()

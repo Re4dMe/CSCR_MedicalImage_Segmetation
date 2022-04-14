@@ -1,5 +1,3 @@
-""" Full assembly of the parts to form the complete network """
-
 import torch.nn.functional as F
 import torchvision.models as models
 from .unet_parts import *
