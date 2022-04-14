@@ -11,6 +11,10 @@ https://www.aao.org/eye-health/diseases/what-is-central-serous-retinopathy
 * future  
 ## Run
 train.py  
-`python train.py`  
+```
+python train.py
+```  
 eval.py  
-`python eval.py`  
+```
+python eval.py
+```
