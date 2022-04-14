@@ -10,11 +10,11 @@ https://www.aao.org/eye-health/diseases/what-is-central-serous-retinopathy
 * tensorboard  
 * future  
 ## Run
-train.py  
+train
 ```
 python train.py
 ```  
-eval.py  
+eval
 ```
 python eval.py
 ```
